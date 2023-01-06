@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Challenge- Desafío</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+
+         <body>
+
+            <header>
+                <h1><img src="imagenes/Logo.png"></h1>
+                <h2 class="titulo-principal">Encriptador de Textos</h2>
+            </header>  
+        
+            <div class="caja">
+                <div class="izquierdo">
+                    <input type="text" id="textoEncriptado" placeholder="Ingrese el texto aquí">
+                </div>
+                 
+                <div class="derecho">
+                    <img src="imagenes/Muñeco.png" id="muneco">
+                    <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10">Ingrese el texto que desees encriptar o desencriptar.</textarea>   
+                </div>
+                
+                <div class="botones">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <button type="button" id="encriptado">Encriptar</button>
+                    <button type="button" id="desencriptado">Desencriptar</button>
+                    <button type="button" id="botonCopiar">Copiar</button>
+                </div>
+            </div>
+          
+                        
+            <script>
+               var boton = document.querySelector("#encriptado");
+               boton.onclick = encriptar;
+               var boton1 = document.querySelector("#desencriptado");
+               boton1.onclick = desencriptar;
+               var boton2 = document.querySelector("#botonCopiar");
+               boton2.onclick = copiar;
+           </script>
+          
+        </body>
+
+    <footer>
+        <p class="copyright">&copy Copyright Marcos Oberti - 2022</p>
+    </footer>
+    
+</html>
+
+
