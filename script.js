@@ -23,10 +23,13 @@ function desencriptar(){
     var textoEncriptado = textoEncriptado.replace(/ufat/img, "u");
 
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
+    
 }
 
 function copiar(){
     var contenido = document.querySelector("#textoDesencriptado");
     contenido.select();
     document.execCommand("copy");
+    textoEncriptado.value ="";
+    textoEncriptado.focus();
 }
