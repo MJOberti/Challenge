@@ -23,7 +23,8 @@ function desencriptar(){
     var textoEncriptado = textoEncriptado.replace(/ufat/img, "u");
 
     document.getElementById("textoDesencriptado").innerHTML = textoEncriptado;
-    
+    document.getElementById("botonCopiar").style.display = "show";
+    document.getElementById("botonCopiar").style.display = "inherit";
 }
 
 function copiar(){
@@ -32,4 +33,5 @@ function copiar(){
     document.execCommand("copy");
     textoEncriptado.value ="";
     textoEncriptado.focus();
+    document.getElementById("botonCopiar").style.display = "none";
 }
